@@ -5,6 +5,7 @@ pipeline{
       steps {
       
       echo 'building the application...'
+        git clone https://github.com/ADICODITAS/test-repo1.git
       
       }
         }
