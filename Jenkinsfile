@@ -1,9 +1,13 @@
 pipeline{
+  
   agent any
+  
   stages{
+    
     stage("build"){
+      
       steps {
-          chmod +x ./hii.sh 
+          chmod +x './hii.sh' 
           echo 'building the application...'
           echo "helooo"
       }
