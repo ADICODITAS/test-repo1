@@ -10,6 +10,7 @@ pipeline{
         }
        stage("test"){
         steps{
+          sh hii.sh
           echo "testing"
           }
        }
