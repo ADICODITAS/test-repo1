@@ -5,9 +5,9 @@ pipeline{
   stages{
     
     stage("build"){
-      
+          
       steps {
-        chmod +x "hii.sh"
+        echo 'hiii'
       }
       steps{
              echo 'building the application...'
@@ -15,7 +15,7 @@ pipeline{
         }
        stage("test"){
         steps{
-            chmod +x 'hii.sh'
+            
             sh './hii.sh'
             echo "testing"
           }
