@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Clone Git Repository') {
             steps {
-                git 'https://github.com/ADICODITAS/test-repo1.git'
+                git branch: 'main', url: 'https://github.com/ADICODITAS/test-repo1.git'
             }
         }
         stage('Run Shell Script') {
             steps {
-                @nohup sh './hii.sh'
+                sh './hii.sh'
             }
         }
     }
