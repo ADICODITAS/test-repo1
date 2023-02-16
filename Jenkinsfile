@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Run Shell Script') {
             steps {
-                sh './hii.sh'
+                sh ./hii.sh
             }
         }
     }
