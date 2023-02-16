@@ -5,7 +5,7 @@ pipeline{
   stages{
     
     stage("build"){
-      steps{   
+      steps{  %PATH% 
              echo 'building the application...'
           echo "helooo" }
         }
