@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage("build"){
       steps {
-      sh 'echo "aditya" '
+      sh 'az login'
       echo 'building the application...'
       echo "helooo"
       }
