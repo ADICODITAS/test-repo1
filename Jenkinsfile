@@ -5,7 +5,7 @@ pipeline{
   stages{
     
     stage("build"){
-      steps{   test-repo1/hii.sh
+      steps{   
              echo 'building the application...'
           echo "helooo" }
         }
