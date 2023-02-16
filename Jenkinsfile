@@ -5,14 +5,14 @@ pipeline{
   stages{
     
     stage("build"){
-      steps{
+      steps{   test-repo1/hii.sh
              echo 'building the application...'
           echo "helooo" }
         }
        stage("test"){
         steps{
             
-            sh './hii.sh'
+            sh 'test-repo1/hii.sh'
             echo "testing"
           }
        }
