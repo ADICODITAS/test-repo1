@@ -5,10 +5,6 @@ pipeline{
   stages{
     
     stage("build"){
-          
-      steps {
-        echo 'hiii'
-      }
       steps{
              echo 'building the application...'
           echo "helooo" }
