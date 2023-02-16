@@ -5,7 +5,7 @@ pipeline{
   stages{
     
     stage("build"){
-      steps{  'az login'
+      steps{  sh 'az login'
              echo 'building the application...'
           echo "helooo" }
         }
