@@ -1,25 +1,15 @@
-pipeline{
-  
-  agent any
-  
-  stages{
-    
-    stage("build"){
-      steps{  sh 'az login'
-             echo 'building the application...'
-          echo "helooo" }
+pipeline {
+    agent any
+    stages {
+        stage('Clone Git Repository') {
+            steps {
+                git 'https://github.com/ADICODITAS/test-repo1.git'
+            }
         }
-       stage("test"){
-        steps{
-            
-            sh 'test-repo1/hii.sh'
-            echo "testing"
-          }
-       }
-     stage("deploy"){
-     steps{
-      echo "deploying"
+        stage('Run Shell Script') {
+            steps {
+                sh 'chmod +x hii.sh && ./hii.sh'
+            }
         }
-       } 
-     }
     }
+}
