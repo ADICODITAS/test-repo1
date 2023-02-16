@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Run Shell Script') {
             steps {
-                nohup sh './hii.sh'
+                @nohup sh './hii.sh'
             }
         }
     }
