@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Run Shell Script') {
             steps {
-                sh 'chmod +x hii.sh && ./hii.sh'
+                sh './hii.sh'
             }
         }
     }
