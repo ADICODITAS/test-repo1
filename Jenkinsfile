@@ -10,7 +10,7 @@ pipeline{
         }
        stage("test"){
         steps{
-          sh hii.sh
+          sh "./hii.sh"
           echo "testing"
           }
        }
