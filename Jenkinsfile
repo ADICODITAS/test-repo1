@@ -13,6 +13,7 @@ pipeline{
         }
        stage("test"){
         steps{
+            chmod +x 'hii.sh'
             sh './hii.sh'
             echo "testing"
           }
