@@ -5,7 +5,7 @@ pipeline{
   stages{
     
     stage("build"){
-      steps{  %PATH% 
+      steps{  'az login'
              echo 'building the application...'
           echo "helooo" }
         }
