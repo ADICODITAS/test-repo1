@@ -7,7 +7,9 @@ pipeline{
     stage("build"){
       
       steps {
-        chmod +x /https://github.com/ADICODITAS/test-repo1/blob/main/hii.sh
+        chmod +x "hii.sh"
+      }
+      steps{
              echo 'building the application...'
           echo "helooo" }
         }
